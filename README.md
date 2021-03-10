@@ -4,23 +4,26 @@ please only use this on devices you own or have **explicit** permission from the
 
 all scripts must start with:
 ```
+set number=1
 < run.sav (
   set /p number=
 )
 
-set update=1
-
-if %number% equ %update% (payload.bat)
-
+set update=2
+if %number% equ %update% (goto end)
+```
 
 all scripts must end with:
-echo %update%>run.sav
-payload.bat
+```
+echo %update% >run.sav
+:end
+timeout 1 >nul
+exit /b
 ```
 change the 1 in where it says
 ```set update=1```
 to anything else every time you update the code
-not doing so will mean your code wont run
+,not doing so will mean your code wont run
 
 
 rules:
