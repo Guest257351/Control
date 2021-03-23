@@ -1,0 +1,17 @@
+V:24.18:
+fixed auto remove backdoor
+
+
+V2.24.17:
+fixed run.bat success detection
+
+
+V2.24.16:
+added removal of backdoor to script
+
+
+V2.23.16:
+Reworked entire web access system
+heavy code optimization
+fixed, reworked, and reimplemented update logs
+
